@@ -92,6 +92,8 @@ const texty2='[{"m_title": "Attack on Titan", "r": "9", "year": "2013"}, {"m_tit
               {
                 num=yi+1;
                 yi++;
+                if(yi==100)
+                break;
                 name=myarr[i]['m_title'].replace(/ /g,"+")+"+series+trailer\"";
                 var ss="<tr><th>"+num.toString()+"</th><td>"+myarr[i]['m_title']+"</td><td>"+myarr[i]['year']+"</td><td>"+myarr[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
                 $("tbody").append(ss);
@@ -103,6 +105,8 @@ const texty2='[{"m_title": "Attack on Titan", "r": "9", "year": "2013"}, {"m_tit
             for(var i=0;i<Object.keys(myarr).length;i++)
             {
               num=i+1;
+              if(i==99)
+              break;
               name=myarr[i]['m_title'].replace(/ /g,"+")+"+series+trailer\"";
               var ss="<tr><th>"+num.toString()+"</th><td>"+myarr[i]['m_title']+"</td><td>"+myarr[i]['year']+"</td><td>"+myarr[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+"target=\"_blank\">link</a></td></tr>";
               $("tbody").append(ss);
@@ -121,6 +125,8 @@ const texty2='[{"m_title": "Attack on Titan", "r": "9", "year": "2013"}, {"m_tit
               {
                 num=yi+1;
                 yi++;
+                if(yi==100)
+                break;
                 name=myarr2[i]['m_title'].replace(/ /g,"+")+"+anime+trailer\"";
                 var ss="<tr><th>"+num.toString()+"</th><td>"+myarr2[i]['m_title']+"</td><td>"+myarr2[i]['year']+"</td><td>"+myarr2[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+"target=\"_blank\">link</a></td></tr>";
                 $("tbody").append(ss);
@@ -132,6 +138,8 @@ const texty2='[{"m_title": "Attack on Titan", "r": "9", "year": "2013"}, {"m_tit
             for(var i=0;i<Object.keys(myarr2).length;i++)
             {
               num=i+1;
+              if(i==99)
+              break;
               name=myarr2[i]['m_title'].replace(/ /g,"+")+"+anime+trailer\"";
               var ss="<tr><th>"+num.toString()+"</th><td>"+myarr2[i]['m_title']+"</td><td>"+myarr2[i]['year']+"</td><td>"+myarr2[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+"target=\"_blank\">link</a></td></tr>";
               $("tbody").append(ss);
