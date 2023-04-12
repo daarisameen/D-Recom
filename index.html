@@ -2,6 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="Best recommendation site for Anime and K series">
+    <meta name="keywords" content="Anime, K-series, recommendation, Imdb, rating, popularity, English-series, ads, best recommendation, Released-Year, year-wise">
+    <meta name="author" content="D-Recom">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>D-Recom</title>
 
@@ -30,7 +33,7 @@
     <div class="container">
       <h1 style="font-family:Roboto">D-Recom</h1>
       <h2 style="font-family:Roboto-Thin">Best recommendation site for Anime and K series</h2>
-      <h5 style="color:#FFD700;">For ads & queries write to zameer.daaris1122@gmail.com</h5>
+      <h5 style="color:#FFD700;" id="status">For ads & queries write to zameer.daaris1122@gmail.com</h5>
       <p></p>
       <h6>Made with ❤ by <a style="color:blueviolet; text-decoration:none" href="https://www.linkedin.com/in/daaris-ameen-430281214/">Daaris Ameen</a> </h6>                                          
       
@@ -40,17 +43,17 @@
         Choose
         <option style="color:yellow" value="0" class="dropdown-item" >K series</option style="color:yellow">
         <option style="color:yellow" value="1" class="dropdown-item" >Anime</option style="color:yellow">
-        <option style="color:yellow" value="1" class="dropdown-item" >English series</option style="color:yellow">
+        <option style="color:yellow" value="2" class="dropdown-item" >Indian series</option style="color:yellow">
         </select>
       </div>
 
-      <h3  style="display:inline;">&nbsp; +</h3>
+      <!-- <h3  style="display:inline;">&nbsp; +</h3> -->
       <h3  style="display:inline;">&nbsp; Released-Year</h3>
       <div  class="dropdown" style="display:inline;">
         <select class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
         2023
         
-        <option style="color:yellow" value="0" class="dropdown-item" >All Year Combined</option style="color:yellow">
+        <option style="color:yellow" value="0" class="dropdown-item" >All Year</option style="color:yellow">
         <option style="color:yellow" value="1" class="dropdown-item" >2023</option style="color:yellow">
         <option style="color:yellow" value="2" class="dropdown-item" >2022</option style="color:yellow">
         <option style="color:yellow" value="3" class="dropdown-item" >2021</option style="color:yellow">
@@ -96,12 +99,12 @@
       </select>
       </div>
 
-      <h3 style="display:inline;" hidden>&nbsp; Genre</h3>
-      <div hidden class="dropdown" style="display:inline;">
+      <h3 hidden style="display:inline;">&nbsp; Genre</h3>
+      <div  hidden class="dropdown" style="display:inline;">
         <select class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
         Thriller
         
-        <option style="color:yellow" value="0" class="dropdown-item" >All Genre Combined</option style="color:yellow">  
+        <option style="color:yellow" value="0" class="dropdown-item" >All Genre</option style="color:yellow">  
         <option style="color:yellow" value="1" class="dropdown-item" >Comedy</option style="color:yellow">
         <option style="color:yellow" value="2" class="dropdown-item" >Sci-Fi</option style="color:yellow">
         <option style="color:yellow" value="3" class="dropdown-item" >Horror</option style="color:yellow">
@@ -112,6 +115,7 @@
         <option style="color:yellow" value="8" class="dropdown-item" >Mystery</option style="color:yellow">
         <option style="color:yellow" value="9" class="dropdown-item" >Crime</option style="color:yellow">
         <option style="color:yellow" value="10" class="dropdown-item" >Adventure</option style="color:yellow">
+        <option style="color:yellow" value="11" class="dropdown-item" >Sport</option style="color:yellow">
         </select>
       </div>
 
@@ -162,6 +166,7 @@
               <th scope="col">#Rank</th>
               <th scope="col">Name</th>
               <th scope="col">Released Year</th>
+              <th scope="col">Genre</th>
               <th scope="col">Imdb Rating</th>
               <th scope="col">Trailer</th>
             </tr>
