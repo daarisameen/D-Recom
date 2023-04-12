@@ -57,14 +57,23 @@ const texty2='[{"m_title": "Attack on Titan", "r": "9", "year": "2013"}, {"m_tit
             interval: 5000, cycle: true
           })
         });    
+
+        var movexx=0;
+        var FLAG=false;
   
         function myfuky(){
 
           $("tbody").attr("hidden",false);
+          
+          $(window).scrollTop(movexx);
+
         }
   
         function myfuky2(){
+          
+          movexx=$(window).scrollTop();
           $("tbody").attr("hidden",true);
+          
         }
 
 
@@ -93,6 +102,7 @@ const texty2='[{"m_title": "Attack on Titan", "r": "9", "year": "2013"}, {"m_tit
           $("table tbody").remove(); 
           $("table").append("<tbody></tbody>");
           
+          $("#myInput").attr("hidden",false);
           $("table").attr("hidden",false);
           // <tbody>
             // <tr>
@@ -320,4 +330,27 @@ const texty2='[{"m_title": "Attack on Titan", "r": "9", "year": "2013"}, {"m_tit
 
       // scrollbtn
 
+
+
+
+      function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }       
+        }
+      }
+
+      // table search
 
