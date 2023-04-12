@@ -87,3 +87,18 @@ thead{
 #myBtn:hover {
   background-color: #555;
 }
+
+#myInput {
+  background-image: url('images/search.jpg');
+  background-size: 30px 30px;
+  color: #222;
+  background-position: 7px 10px;
+  text-decoration-color: #222;
+  background-repeat: no-repeat;
+  width: 50%;
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 2px solid #4b4d85;
+  margin-bottom: 12px;
+}
