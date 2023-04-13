@@ -391,32 +391,32 @@ const texty2 = '[{"m_title": "Attack on Titan", "r": "9.0", "year": "2013", "vot
       // js code ends
 
 
-    //   document.onkeydown = function(e) {
-    //     if(event.keyCode == 123) {
-    //        return false;
-    //     }
+      document.onkeydown = function(e) {
+        if(event.keyCode == 123) {
+           return false;
+        }
       
-    //     if((e.ctrlKey && e.keyCode == 'p'.charCodeAt(0) ) || (e.ctrlKey && e.keyCode == 'P'.charCodeAt(0) ))  {
-    //       return false;
-    //    }
+        if((e.ctrlKey && e.keyCode == 'p'.charCodeAt(0) ) || (e.ctrlKey && e.keyCode == 'P'.charCodeAt(0) ))  {
+          return false;
+       }
 
-    //    if((e.keyCode == 91  || e.keyCode == 92 ) && (e.keyCode == 44))  {
-    //     return false;
-    //  }
+       if((e.keyCode == 91  || e.keyCode == 92 ) && (e.keyCode == 44))  {
+        return false;
+     }
 
-    //     if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-    //        return false;
-    //     }
-    //     if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-    //        return false;
-    //     }
-    //     if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-    //        return false;
-    //     }
-    //     if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-    //        return false;
-    //     }
-    //   }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+           return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+           return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+           return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+           return false;
+        }
+      }
       // keydown block
 
 
