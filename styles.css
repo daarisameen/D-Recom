@@ -104,18 +104,12 @@ thead{
   box-shadow: 0 0 5px #4b4d85;
 }
 
-.hides {
-  display: none;
-}
-    
-.myDIV:hover + .hides {
-  display: block;
+.hiddendiv{
+  display:none;
+  }
+  
+  .myDIV:focus + .hiddendiv{
+  display:block;
   background-color: yellow;
   color: black;
-}
-
-.myDIV:active + .hides {
-  display: block;
-  background-color: yellow;
-  color: black;
-}
+  }
