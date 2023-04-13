@@ -23,10 +23,10 @@ const texty2 = '[{"m_title": "Attack on Titan", "r": "9.0", "year": "2013", "vot
 
 
 
-      const myarr2 = JSON.parse(texty2);
-      const myarr3 = JSON.parse(texty3);
+      const myarr2 = JSON.parse(texty2); //for ani
+      const myarr3 = JSON.parse(texty3); //for inser
       
-      const myarr = JSON.parse(texty);
+      const myarr = JSON.parse(texty); // for kser
       var url = ""
       var title_type="";
       var year="";
@@ -133,12 +133,48 @@ const texty2 = '[{"m_title": "Attack on Titan", "r": "9.0", "year": "2013", "vot
           
           if(title_type=="K series")
           {
-            if(yearindex!="0")
+            if(yearindex!="0" && genreindex!="0")
+          {
+            var yi=0;
+            for(var i=0;i<Object.keys(myarr).length;i++)
+            {
+              const gen = myarr[i]['genre'];
+              if(myarr[i]['year']==year && gen.includes(genre))
+              {
+                num=yi+1;
+                yi++;
+                // if(yi==100)
+                // break;
+                name=myarr[i]['m_title'].replace(/ /g,"+")+"+series+trailer\"";
+                var ss="<tr><th>"+num.toString()+"</th><td>"+myarr[i]['m_title']+"</td><td>"+myarr[i]['year']+"</td><td>"+myarr[i]['genre']+"</td><td>"+myarr[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
+                $("tbody").append(ss);
+              }
+            }
+          }
+          else if(yearindex!="0")
           {
             var yi=0;
             for(var i=0;i<Object.keys(myarr).length;i++)
             {
               if(myarr[i]['year']==year)
+              {
+                num=yi+1;
+                yi++;
+                // if(yi==100)
+                // break;
+                name=myarr[i]['m_title'].replace(/ /g,"+")+"+series+trailer\"";
+                var ss="<tr><th>"+num.toString()+"</th><td>"+myarr[i]['m_title']+"</td><td>"+myarr[i]['year']+"</td><td>"+myarr[i]['genre']+"</td><td>"+myarr[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
+                $("tbody").append(ss);
+              }
+            }
+          }
+          else if(genreindex!="0")
+          {
+            var yi=0;
+            for(var i=0;i<Object.keys(myarr).length;i++)
+            {
+              const gen = myarr[i]['genre'];
+              if(gen.includes(genre))
               {
                 num=yi+1;
                 yi++;
@@ -166,47 +202,120 @@ const texty2 = '[{"m_title": "Attack on Titan", "r": "9.0", "year": "2013", "vot
           }
           else if(title_type=="Anime")
           {
-            if(yearindex!="0")
-          {
-            var yi=0;
-            for(var i=0;i<Object.keys(myarr2).length;i++)
+           
+            if(yearindex!="0" && genreindex!="0")
             {
-              if(myarr2[i]['year']==year)
+              var yi=0;
+              for(var i=0;i<Object.keys(myarr2).length;i++)
               {
-                num=yi+1;
-                yi++;
-                // if(yi==100)
+                const gen = myarr2[i]['genre'];
+                if(myarr2[i]['year']==year && gen.includes(genre))
+                {
+                  num=yi+1;
+                  yi++;
+                  // if(yi==100)
+                  // break;
+                  name=myarr2[i]['m_title'].replace(/ /g,"+")+"+anime+trailer\"";
+                  var ss="<tr><th>"+num.toString()+"</th><td>"+myarr2[i]['m_title']+"</td><td>"+myarr2[i]['year']+"</td><td>"+myarr2[i]['genre']+"</td><td>"+myarr2[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
+                  $("tbody").append(ss);
+                }
+              }
+            }
+            else if(yearindex!="0")
+            {
+              var yi=0;
+              for(var i=0;i<Object.keys(myarr2).length;i++)
+              {
+                if(myarr2[i]['year']==year)
+                {
+                  num=yi+1;
+                  yi++;
+                  // if(yi==100)
+                  // break;
+                  name=myarr2[i]['m_title'].replace(/ /g,"+")+"+anime+trailer\"";
+                  var ss="<tr><th>"+num.toString()+"</th><td>"+myarr2[i]['m_title']+"</td><td>"+myarr2[i]['year']+"</td><td>"+myarr2[i]['genre']+"</td><td>"+myarr2[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
+                  $("tbody").append(ss);
+                }
+              }
+            }
+            else if(genreindex!="0")
+            {
+              var yi=0;
+              for(var i=0;i<Object.keys(myarr2).length;i++)
+              {
+                const gen = myarr2[i]['genre'];
+                if(gen.includes(genre))
+                {
+                  num=yi+1;
+                  yi++;
+                  // if(yi==100)
+                  // break;
+                  name=myarr2[i]['m_title'].replace(/ /g,"+")+"+anime+trailer\"";
+                  var ss="<tr><th>"+num.toString()+"</th><td>"+myarr2[i]['m_title']+"</td><td>"+myarr2[i]['year']+"</td><td>"+myarr2[i]['genre']+"</td><td>"+myarr2[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
+                  $("tbody").append(ss);
+                }
+              }
+            }
+            else
+            {
+              for(var i=0;i<Object.keys(myarr2).length;i++)
+              {
+                num=i+1;
+                // if(i==99)
                 // break;
-                name=myarr2[i]['m_title'].replace(/ /g,"+")+"+anime+trailer\"";
-                var ss="<tr><th>"+num.toString()+"</th><td>"+myarr2[i]['m_title']+"</td><td>"+myarr2[i]['year']+"</td><td>"+myarr2[i]['genre']+"</td><td>"+myarr2[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
+                 name=myarr2[i]['m_title'].replace(/ /g,"+")+"+anime+trailer\"";
+                  var ss="<tr><th>"+num.toString()+"</th><td>"+myarr2[i]['m_title']+"</td><td>"+myarr2[i]['year']+"</td><td>"+myarr2[i]['genre']+"</td><td>"+myarr2[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
                 $("tbody").append(ss);
               }
             }
-          }
-          else
-          {
-            for(var i=0;i<Object.keys(myarr2).length;i++)
-            {
-              num=i+1;
-              // if(i==99)
-              // break;
-              name=myarr2[i]['m_title'].replace(/ /g,"+")+"+anime+trailer\"";
-              var ss="<tr><th>"+num.toString()+"</th><td>"+myarr2[i]['m_title']+"</td><td>"+myarr2[i]['year']+"</td><td>"+myarr2[i]['genre']+"</td><td>"+myarr2[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
-              $("tbody").append(ss);
-            }
-          }
+  
           
           }
 
           else
           {
-            
-            if(yearindex!="0")
+             if(yearindex!="0" && genreindex!="0")
+          {
+            var yi=0;
+            for(var i=0;i<Object.keys(myarr3).length;i++)
+            {
+              const gen = myarr3[i]['genre'];
+              if(myarr3[i]['year']==year && gen.includes(genre))
+              {
+                num=yi+1;
+                yi++;
+                // if(yi==100)
+                // break;
+                name=myarr3[i]['m_title'].replace(/ /g,"+")+"+series+trailer\"";
+                var ss="<tr><th>"+num.toString()+"</th><td>"+myarr3[i]['m_title']+"</td><td>"+myarr3[i]['year']+"</td><td>"+myarr3[i]['genre']+"</td><td>"+myarr3[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
+                $("tbody").append(ss);
+              }
+            }
+          }
+          else if(yearindex!="0")
           {
             var yi=0;
             for(var i=0;i<Object.keys(myarr3).length;i++)
             {
               if(myarr3[i]['year']==year)
+              {
+                num=yi+1;
+                yi++;
+                // if(yi==100)
+                // break;
+                name=myarr3[i]['m_title'].replace(/ /g,"+")+"+series+trailer\"";
+                var ss="<tr><th>"+num.toString()+"</th><td>"+myarr3[i]['m_title']+"</td><td>"+myarr3[i]['year']+"</td><td>"+myarr3[i]['genre']+"</td><td>"+myarr3[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
+                $("tbody").append(ss);
+              }
+            }
+          }
+          else if(genreindex!="0")
+          {
+            var yi=0;
+            for(var i=0;i<Object.keys(myarr3).length;i++)
+            {
+              const gen = myarr3[i]['genre'];
+              if(gen.includes(genre))
               {
                 num=yi+1;
                 yi++;
@@ -225,8 +334,8 @@ const texty2 = '[{"m_title": "Attack on Titan", "r": "9.0", "year": "2013", "vot
               num=i+1;
               // if(i==99)
               // break;
-              name=myarr3[i]['m_title'].replace(/ /g,"+")+"+series+trailer\"";
-              var ss="<tr><th>"+num.toString()+"</th><td>"+myarr3[i]['m_title']+"</td><td>"+myarr3[i]['year']+"</td><td>"+myarr3[i]['genre']+"</td><td>"+myarr3[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
+               name=myarr3[i]['m_title'].replace(/ /g,"+")+"+series+trailer\"";
+                var ss="<tr><th>"+num.toString()+"</th><td>"+myarr3[i]['m_title']+"</td><td>"+myarr3[i]['year']+"</td><td>"+myarr3[i]['genre']+"</td><td>"+myarr3[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
               $("tbody").append(ss);
             }
           }
