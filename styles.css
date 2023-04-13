@@ -113,3 +113,9 @@ thead{
   background-color: yellow;
   color: black;
 }
+
+.myDIV:active + .hides {
+  display: block;
+  background-color: yellow;
+  color: black;
+}
