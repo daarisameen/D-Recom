@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Best recommendation site for Anime and K series">
+    <meta name="keywords" content="Anime, K-series, recommendation, Imdb, rating, popularity, English-series, ads, best recommendation, Released-Year, year-wise">
+    <meta name="author" content="D-Recom">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>D-Recom</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="images/logos.ico">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body class="dark prevent-select" onfocus="myfuky()" onblur="myfuky2()">
+    
+    <div class="topnav">
+      <a  href="index.html">Japanese</a>
+      <a href="korean.html">Korean</a>
+      <a class="active" href="indian.html">Indian</a>
+      <!-- <a href="#news">News</a> -->
+      <a href="mailto:zameer.daaris1122@gmail.com">Ads</a>
+      <a href="https://www.linkedin.com/in/daaris-ameen-430281214/">About me</a>
+      <div class="mode">
+        Dark mode:             
+        <span class="change">ON</span>
+      </div>
+    </div>
+    
+    <div style="padding-left:16px">
+      
+      <h1>D-Recom</h1>
+      
+      <p style="display: inline;">BEST RECOMMENDATION SITE FOR <p id="status" style="color: gold; display: inline;">ANIME AND K-SERIES</p></p>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+    
+
+    <!-- <div class="login">
+      <div id="g-signin2"></div>
+      <button onclick="signOut()">Sign out</button>
+    </div> -->
+    <div class="">
+      
+      <p></p>
+
+      <!-- <h3  style="display:inline;">&nbsp; +</h3> -->
+      
+
+      <h3 hidden style="display:inline;">&nbsp; List</h3>
+      <div hidden="true" class="dropdown" style="display:inline;">
+        <select class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+
+        <option style="color:yellow" value="0" class="dropdown-item" >Top 50</option style="color:yellow">  
+        <option style="color:yellow" value="1" class="dropdown-item" >Top 25</option style="color:yellow">
+        <option style="color:yellow" value="2" class="dropdown-item" >Top 10</option style="color:yellow">
+        </select>
+      </div>
+
+      <!-- <h3 style="display:inline;">&nbsp; → &nbsp;</h3> -->
+      
+
+    
+        <!-- <div class="w3-dark-grey w3-round-large">
+        <div id="myBar" class="w3-container w3-round-large w3-red w3-center" style="width:0%">0%</div>
+      </div> -->
+
+
+        <div class="choose row d-flex justify-content-center">
+          <div class="col-lg-3 col-sm-12 col-md-4">
+            
+            <h3 style="display:inline;">Choose</h3>
+            <div  class="dropdown" style="display:inline;">
+              <select class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Choose
+              <option style="color:yellow" value="1" class="dropdown-item" >Indian series</option style="color:yellow">
+              <option style="color:yellow" value="2" class="dropdown-item" >Hindi Movies</option style="color:yellow">
+              <option style="color:yellow" value="3" class="dropdown-item" >Tamil Movies</option style="color:yellow">
+              <option style="color:yellow" value="4" class="dropdown-item" >Telugu Movies</option style="color:yellow"> 
+              <option style="color:yellow" value="5" class="dropdown-item" >Kannada Movies</option style="color:yellow">
+              <option style="color:yellow" value="6" class="dropdown-item" >Malayalam Movies</option style="color:yellow">
+              
+                </select>
+            </div>
+          
+          </div>
+          
+          <div hidden="false" class="year col-lg-3 col-sm-12 col-md-4">
+            
+            <h3 style="display:inline;"> Released-Year</h3>
+            <div class="dropdown" style="display:inline;">
+              <select class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              2023
+              
+              <option style="color:yellow" value="0" class="dropdown-item" >All Year</option style="color:yellow">
+              <option style="color:yellow" value="1" class="dropdown-item" >2023</option style="color:yellow">
+              <option style="color:yellow" value="2" class="dropdown-item" >2022</option style="color:yellow">
+              <option style="color:yellow" value="3" class="dropdown-item" >2021</option style="color:yellow">
+              <option style="color:yellow" value="4" class="dropdown-item" >2020</option style="color:yellow">
+              <option style="color:yellow" value="5" class="dropdown-item" >2019</option style="color:yellow">
+              <option style="color:yellow" value="6" class="dropdown-item" >2018</option style="color:yellow">
+              <option style="color:yellow" value="7" class="dropdown-item" >2017</option style="color:yellow">
+              <option style="color:yellow" value="8" class="dropdown-item" >2016</option style="color:yellow">
+              <option style="color:yellow" value="9" class="dropdown-item" >2015</option style="color:yellow">
+              <option style="color:yellow" value="10" class="dropdown-item" >2014</option style="color:yellow">
+              <option style="color:yellow" value="11" class="dropdown-item" >2013</option style="color:yellow">
+              <option style="color:yellow" value="12" class="dropdown-item" >2012</option style="color:yellow">
+              <option style="color:yellow" value="13" class="dropdown-item" >2011</option style="color:yellow">
+              <option style="color:yellow" value="14" class="dropdown-item" >2010</option style="color:yellow">
+              <option style="color:yellow" value="15" class="dropdown-item" >2009</option style="color:yellow">
+              <option style="color:yellow" value="16" class="dropdown-item" >2008</option style="color:yellow">
+              <option style="color:yellow" value="17" class="dropdown-item" >2007</option style="color:yellow">
+              <option style="color:yellow" value="18" class="dropdown-item" >2006</option style="color:yellow">
+              <option style="color:yellow" value="19" class="dropdown-item" >2005</option style="color:yellow">
+              <option style="color:yellow" value="20" class="dropdown-item" >2004</option style="color:yellow">
+              <option style="color:yellow" value="21" class="dropdown-item" >2003</option style="color:yellow">
+              <option style="color:yellow" value="22" class="dropdown-item" >2002</option style="color:yellow">
+              <option style="color:yellow" value="23" class="dropdown-item" >2001</option style="color:yellow">
+              <option style="color:yellow" value="24" class="dropdown-item" >2000</option style="color:yellow">
+              <option style="color:yellow" value="25" class="dropdown-item" >1999</option style="color:yellow">
+              <option style="color:yellow" value="26" class="dropdown-item" >1998</option style="color:yellow">
+              <option style="color:yellow" value="27" class="dropdown-item" >1997</option style="color:yellow">
+              <option style="color:yellow" value="28" class="dropdown-item" >1996</option style="color:yellow">
+              <option style="color:yellow" value="29" class="dropdown-item" >1995</option style="color:yellow">
+              <option style="color:yellow" value="30" class="dropdown-item" >1994</option style="color:yellow">
+              <option style="color:yellow" value="31" class="dropdown-item" >1993</option style="color:yellow">
+              <option style="color:yellow" value="32" class="dropdown-item" >1992</option style="color:yellow">
+              <option style="color:yellow" value="33" class="dropdown-item" >1991</option style="color:yellow">
+              <option style="color:yellow" value="34" class="dropdown-item" >1990</option style="color:yellow">
+              <option style="color:yellow" value="35" class="dropdown-item" >1989</option style="color:yellow">
+              <option style="color:yellow" value="36" class="dropdown-item" >1988</option style="color:yellow">
+              <option style="color:yellow" value="37" class="dropdown-item" >1987</option style="color:yellow">
+              <option style="color:yellow" value="38" class="dropdown-item" >1986</option style="color:yellow">
+              <option style="color:yellow" value="39" class="dropdown-item" >1985</option style="color:yellow">
+              <option style="color:yellow" value="40" class="dropdown-item" >1984</option style="color:yellow">
+              <option style="color:yellow" value="41" class="dropdown-item" >1983</option style="color:yellow">
+              <option style="color:yellow" value="42" class="dropdown-item" >1982</option style="color:yellow">
+            </select>
+            </div>
+
+          </div>
+          
+          <div hidden="false" class="genre col-lg-3 col-sm-12 col-md-4">
+            
+            <h3 style="display:inline;"> Genre</h3>
+            <div class="dropdown" style="display:inline;">
+              <select class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+              Genre
+              
+              <option style="color:yellow" value="0" class="dropdown-item" >All Genre</option style="color:yellow">  
+              <option style="color:yellow" value="1" class="dropdown-item" >Comedy</option style="color:yellow">
+              <option style="color:yellow" value="2" class="dropdown-item" >Sci-Fi</option style="color:yellow">
+              <option style="color:yellow" value="3" class="dropdown-item" >Horror</option style="color:yellow">
+              <option style="color:yellow" value="4" class="dropdown-item" >Romance</option style="color:yellow">
+              <option style="color:yellow" value="5" class="dropdown-item" >Action</option style="color:yellow">
+              <option style="color:yellow" value="6" class="dropdown-item" >Thriller</option style="color:yellow">
+              <option style="color:yellow" value="7" class="dropdown-item" >Drama</option style="color:yellow">
+              <option style="color:yellow" value="8" class="dropdown-item" >Mystery</option style="color:yellow">
+              <option style="color:yellow" value="9" class="dropdown-item" >Crime</option style="color:yellow">
+              <option style="color:yellow" value="10" class="dropdown-item" >Adventure</option style="color:yellow">
+              <option style="color:yellow" value="11" class="dropdown-item" >Sport</option style="color:yellow">
+              </select>
+            </div>
+
+          </div>
+
+          <div hidden="true" class="genreman col-lg-3 col-sm-12 col-md-4">
+            
+            <h3 style="display:inline;"> Genre</h3>
+            <div class="dropdown" style="display:inline;">
+              <select class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+              Genre
+              
+              <option style="color:yellow" value="0" class="dropdown-item" >All Genre</option style="color:yellow">  
+              <option style="color:yellow" value="1" class="dropdown-item" >Action</option style="color:yellow">
+              <option style="color:yellow" value="2" class="dropdown-item" >Adventure</option style="color:yellow">
+              <option style="color:yellow" value="3" class="dropdown-item" >Comedy</option style="color:yellow">
+              <option style="color:yellow" value="4" class="dropdown-item" >Demons</option style="color:yellow">
+              <option style="color:yellow" value="5" class="dropdown-item" >Drama</option style="color:yellow">
+              <option style="color:yellow" value="6" class="dropdown-item" >Ecchi</option style="color:yellow">
+              <option style="color:yellow" value="7" class="dropdown-item" >Fantasy</option style="color:yellow">
+              <option style="color:yellow" value="8" class="dropdown-item" >Game</option style="color:yellow">
+              <option style="color:yellow" value="9" class="dropdown-item" >Harem</option style="color:yellow">
+              <option style="color:yellow" value="10" class="dropdown-item" >Hentai</option style="color:yellow">
+              <option style="color:yellow" value="11" class="dropdown-item" >Horror</option style="color:yellow">
+              <option style="color:yellow" value="12" class="dropdown-item" >Magic</option style="color:yellow"> 
+              <option style="color:yellow" value="13" class="dropdown-item" >Mystery</option style="color:yellow">
+              <option style="color:yellow" value="14" class="dropdown-item" >Psychological</option style="color:yellow">
+              <option style="color:yellow" value="15" class="dropdown-item" >Romance</option style="color:yellow">
+              <option style="color:yellow" value="16" class="dropdown-item" >School</option style="color:yellow">
+              <option style="color:yellow" value="17" class="dropdown-item" >Sci-Fi</option style="color:yellow">
+              <option style="color:yellow" value="18" class="dropdown-item" >Shounen</option style="color:yellow">
+              <option style="color:yellow" value="19" class="dropdown-item" >Slice of Life</option style="color:yellow">
+              <option style="color:yellow" value="20" class="dropdown-item" >Sports</option style="color:yellow">
+              <option style="color:yellow" value="21" class="dropdown-item" >Supernatural</option style="color:yellow">
+              <option style="color:yellow" value="22" class="dropdown-item" >Thriller</option style="color:yellow">
+              </select>
+            </div>
+
+          </div>
+          
+          <div class="col-lg-3 col-sm-12 col-md-12">
+            
+            <button class="btn btn-success btn-lg" type="button" onclick="mycall()">
+              Enter
+            </button>
+
+          </div>
+        
+        </div>
+
+<h1></h1>
+        
+        
+        <div class="row">
+          <div class="col-lg-6 col-sm-12 col-md-6">
+            <a href="https://goo.gl/maps/Y273iNAmYJGzDVeq6" target="_blank" > <img src="images/bw.jpg" class="" alt=""> </a>
+          </div>
+          <div class="col-lg-6 col-sm-12 col-md-6">
+            <a href="https://www.google.com/maps/dir//swagg+mens+wear/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3a5267bbb475991f:0x4b0bb7b8a9470a13?sa=X&ved=2ahUKEwjTg4vFn5z-AhWgUWwGHXVJDy8Q9Rd6BAhdEAQ" target="_blank" > <img src="images/sg.jpg" class="" alt=""> </a>
+          </div>
+        </div>
+
+        <h1></h1>
+      
+        <div id="showlist">
+        <p id='embed' hidden >{{embed}}</p>
+        <input type="text" id="myInput" hidden="true" onkeyup="myFunction()" placeholder="Search Name..." title="Type in a name">
+        <table  id="myTable" hidden="true" class="table table-hover table-dark">
+          
+          <tbody hidden="false">
+            
+          </tbody>
+        </table>
+        
+      </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-auth.js"></script>
+
+    
+    
+    <script src="indian.js"></script>
+  </body>
+</html>
+
+<!-- https://dataanalyticsireland.ie/2021/12/13/how-to-pass-a-javascript-variable-to-python-using-json/ -->
+<!-- https://stackoverflow.com/questions/73791152/my-flask-app-is-running-into-a-couple-of-errors-regarding-not-being-able-to-find -->
