@@ -61,7 +61,7 @@
       
 
       <h3 hidden style="display:inline;">&nbsp; List</h3>
-      <div hidden class="dropdown" style="display:inline;">
+      <div hidden="true" class="dropdown" style="display:inline;">
         <select class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
 
         <option style="color:yellow" value="0" class="dropdown-item" >Top 50</option style="color:yellow">  
@@ -79,7 +79,7 @@
       </div> -->
 
 
-        <div class="row d-flex justify-content-center">
+        <div class="choose row d-flex justify-content-center">
           <div class="col-lg-3 col-sm-12 col-md-4">
             
             <h3 style="display:inline;">Choose</h3>
@@ -88,16 +88,18 @@
               Choose
               <option style="color:yellow" value="0" class="dropdown-item" >K series</option style="color:yellow">
               <option style="color:yellow" value="1" class="dropdown-item" >Anime</option style="color:yellow">
-              <option style="color:yellow" value="2" class="dropdown-item" >Indian series</option style="color:yellow">
+              <option style="color:yellow" value="2" class="dropdown-item" >Manga</option style="color:yellow">
+              <option style="color:yellow" value="3" class="dropdown-item" >Manhwa</option style="color:yellow">
+              <option style="color:yellow" value="4" class="dropdown-item" >Indian series</option style="color:yellow">
               </select>
             </div>
           
           </div>
           
-          <div class="col-lg-3 col-sm-12 col-md-4">
+          <div hidden="true" class="year col-lg-3 col-sm-12 col-md-4">
             
-            <h3  style="display:inline;"> Released-Year</h3>
-            <div  class="dropdown" style="display:inline;">
+            <h3 style="display:inline;"> Released-Year</h3>
+            <div class="dropdown" style="display:inline;">
               <select class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
               2023
               
@@ -149,7 +151,7 @@
 
           </div>
           
-          <div class="col-lg-3 col-sm-12 col-md-4">
+          <div hidden="true" class="genre col-lg-3 col-sm-12 col-md-4">
             
             <h3 style="display:inline;"> Genre</h3>
             <div class="dropdown" style="display:inline;">
@@ -168,6 +170,41 @@
               <option style="color:yellow" value="9" class="dropdown-item" >Crime</option style="color:yellow">
               <option style="color:yellow" value="10" class="dropdown-item" >Adventure</option style="color:yellow">
               <option style="color:yellow" value="11" class="dropdown-item" >Sport</option style="color:yellow">
+              </select>
+            </div>
+
+          </div>
+
+          <div hidden="true" class="genreman col-lg-3 col-sm-12 col-md-4">
+            
+            <h3 style="display:inline;"> Genre</h3>
+            <div class="dropdown" style="display:inline;">
+              <select class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+              Genre
+              
+              <option style="color:yellow" value="0" class="dropdown-item" >All Genre</option style="color:yellow">  
+              <option style="color:yellow" value="1" class="dropdown-item" >Action</option style="color:yellow">
+              <option style="color:yellow" value="2" class="dropdown-item" >Adventure</option style="color:yellow">
+              <option style="color:yellow" value="3" class="dropdown-item" >Comedy</option style="color:yellow">
+              <option style="color:yellow" value="4" class="dropdown-item" >Demons</option style="color:yellow">
+              <option style="color:yellow" value="5" class="dropdown-item" >Drama</option style="color:yellow">
+              <option style="color:yellow" value="6" class="dropdown-item" >Ecchi</option style="color:yellow">
+              <option style="color:yellow" value="7" class="dropdown-item" >Fantasy</option style="color:yellow">
+              <option style="color:yellow" value="8" class="dropdown-item" >Game</option style="color:yellow">
+              <option style="color:yellow" value="9" class="dropdown-item" >Harem</option style="color:yellow">
+              <option style="color:yellow" value="10" class="dropdown-item" >Hentai</option style="color:yellow">
+              <option style="color:yellow" value="11" class="dropdown-item" >Horror</option style="color:yellow">
+              <option style="color:yellow" value="12" class="dropdown-item" >Magic</option style="color:yellow"> 
+              <option style="color:yellow" value="13" class="dropdown-item" >Mystery</option style="color:yellow">
+              <option style="color:yellow" value="14" class="dropdown-item" >Psychological</option style="color:yellow">
+              <option style="color:yellow" value="15" class="dropdown-item" >Romance</option style="color:yellow">
+              <option style="color:yellow" value="16" class="dropdown-item" >School</option style="color:yellow">
+              <option style="color:yellow" value="17" class="dropdown-item" >Sci-Fi</option style="color:yellow">
+              <option style="color:yellow" value="18" class="dropdown-item" >Shounen</option style="color:yellow">
+              <option style="color:yellow" value="19" class="dropdown-item" >Slice of Life</option style="color:yellow">
+              <option style="color:yellow" value="20" class="dropdown-item" >Sports</option style="color:yellow">
+              <option style="color:yellow" value="21" class="dropdown-item" >Supernatural</option style="color:yellow">
+              <option style="color:yellow" value="22" class="dropdown-item" >Thriller</option style="color:yellow">
               </select>
             </div>
 
@@ -201,16 +238,7 @@
         <p id='embed' hidden >{{embed}}</p>
         <input type="text" id="myInput" hidden="true" onkeyup="myFunction()" placeholder="Search Name..." title="Type in a name">
         <table  id="myTable" hidden="true" class="table table-hover table-dark">
-          <thead>
-            <tr>
-              <th scope="col"># Rank</th>
-              <th scope="col">Name</th>
-              <th scope="col">Released Year</th>
-              <th scope="col">Genre</th>
-              <th scope="col">Imdb Rating</th>
-              <th scope="col">Trailer</th>
-            </tr>
-          </thead>
+          
           <tbody hidden="false">
             
           </tbody>
