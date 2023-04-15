@@ -36,11 +36,11 @@ $(".change").click( function() {
         // alert("hello")
           $( "body" ).removeClass( "dark" );
           $("table").removeClass("table-dark");
-          $( ".change" ).text( "OFF" );
+          $( ".change" ).text( "☀️" );
       } else {
         // alert("hello")
           $( "body" ).addClass( "dark" );
-          $( ".change" ).text( "ON" );
+          $( ".change" ).text( "🌙" );
           $("table").addClass("table-dark");
       }
   });
@@ -51,8 +51,7 @@ $(".change").click( function() {
     $('.carousel').carousel({
       interval: 5000, cycle: true
     })
-    $(".genre").attr("hidden",false);
-    $(".year").attr("hidden",false); 
+
   });    
 
   var movexx=0;
