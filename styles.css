@@ -24,8 +24,9 @@
 
   .change {
    cursor: pointer;
+   background-color: #E1E0D9;
    border: 1px solid #555;
-   border-radius: 40%;
+   border-radius: 100%;
    width: 20px;
    text-align: center;
    padding: 5px;
@@ -169,5 +170,16 @@ thead{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 18px;
+}
+
+.styled-select {
+  width: 100px;
+  height: 17px;
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
+  background: url(images/downarrow_blue.png) no-repeat right white;
+  border: 2px double red;
+  display: inline-block;
+  position: relative;
 }
 
