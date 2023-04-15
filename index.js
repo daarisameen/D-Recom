@@ -27,11 +27,11 @@ const texty4 = '[{"title": "One Piece", "title_url": "http://mangareader.to/one-
               // alert("hello")
                 $( "body" ).removeClass( "dark" );
                 $("table").removeClass("table-dark");
-                $( ".change" ).text( "OFF" );
+                $( ".change" ).text( "☀️" );
             } else {
               // alert("hello")
                 $( "body" ).addClass( "dark" );
-                $( ".change" ).text( "ON" );
+                $( ".change" ).text( "🌙" );
                 $("table").addClass("table-dark");
             }
         });
