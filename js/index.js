@@ -79,7 +79,8 @@ const texty4 = '[{"title": "One Piece", "title_url": "http://mangareader.to/one-
           }
         }
       
-        move(30);
+        
+$("tr").slideUp();
 
 
 title_type=$("#dropdownMenuButton1 option:selected").text();
@@ -153,10 +154,10 @@ $('#dropdownMenuButton1').change(function() {
 
           var table = document.getElementById("myTable");
           
-          if(title_type=="Anime series")
+          if(title_type=="Anime movies")
           {
             
-            animeseries();
+            animemovies();
           }
 
           else if(title_type=="Manga")
@@ -203,9 +204,9 @@ $('#dropdownMenuButton1').change(function() {
 
           }
 
-          else if(title_type=="Anime movies")
+          else if(title_type=="Anime series")
           {
-            animemovies();
+            animeseries();
           }
 
           
@@ -339,6 +340,7 @@ $('#dropdownMenuButton1').change(function() {
 
 $(document).ready(function(){
   setInterval(callme,1500);
+  mycall();
 })
 
 function callme(){
