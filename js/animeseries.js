@@ -37,6 +37,7 @@ progressbar = 0;
       function save(animename)
       {
 
+        
         var animeseriesname="."+animename;
         
         if($(animeseriesname).is(":checked"))
@@ -101,11 +102,6 @@ function animeseries()
                 $("input").prop('checked', true);
             }
             $("tbody").append(ss);
-            if(localStorage.getItem(noSpecialChars))
-            {
-                var animeseriesname="."+noSpecialChars;
-                $(animeseriesname).prop('checked', true);
-            }
             }
         }
         }
@@ -124,11 +120,6 @@ function animeseries()
             const noSpecialChars = myarranimeseries[i]['m_title'].replace(/[^a-zA-Z0-9]/g, '');
             var ss="<tr><th>"+num.toString()+"</th><td>"+myarranimeseries[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarranimeseries[i]['desp']+"</div></td><td>"+myarranimeseries[i]['year']+"</td><td>"+myarranimeseries[i]['genre']+"</td><td>"+myarranimeseries[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td><td><label class=\"switch\"><input type=\"checkbox\" name=\""+noSpecialChars+"\" onclick=\"save('"+noSpecialChars+"')\"><span class=\"slider round\"></span></label></td></tr>";
             $("tbody").append(ss);
-            if(localStorage.getItem(noSpecialChars))
-            {
-                var animeseriesname="."+noSpecialChars;
-                $(animeseriesname).prop('checked', true);
-            }
             }
         }
         }
@@ -148,11 +139,6 @@ function animeseries()
             const noSpecialChars = myarranimeseries[i]['m_title'].replace(/[^a-zA-Z0-9]/g, '');
             var ss="<tr><th>"+num.toString()+"</th><td>"+myarranimeseries[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarranimeseries[i]['desp']+"</div></td><td>"+myarranimeseries[i]['year']+"</td><td>"+myarranimeseries[i]['genre']+"</td><td>"+myarranimeseries[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td><td><label class=\"switch\"><input type=\"checkbox\" name=\""+noSpecialChars+"\" onclick=\"save('"+noSpecialChars+"')\"><span class=\"slider round\"></span></label></td></tr>";
             $("tbody").append(ss);
-            if(localStorage.getItem(noSpecialChars))
-            {
-                var animeseriesname="."+noSpecialChars;
-                $(animeseriesname).prop('checked', true);
-            }
             }
         }
         }
@@ -171,19 +157,15 @@ function animeseries()
             var ss="<tr><th>"+num.toString()+"</th><td>"+myarranimeseries[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarranimeseries[i]['desp']+"</div></td><td>"+myarranimeseries[i]['year']+"</td><td>"+myarranimeseries[i]['genre']+"</td><td>"+myarranimeseries[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td><td><label class=\"switch\"><input type=\"checkbox\" class=\""+noSpecialChars+"\" onclick=\"save('"+noSpecialChars+"')\"><span class=\"slider round\"></span></label></td></tr>";
             
             $("tbody").append(ss);
-            if(localStorage.getItem(noSpecialChars))
-            {
-                // progressbar++;
-                var animeseriesname="."+noSpecialChars;
-                $(animeseriesname).prop('checked', true);
-            }
-            // $("#myBar").width((progressbar/Object.keys(myarranimeseries).length)*100+"%");
-            // $("#myBar").text((progressbar/Object.keys(myarranimeseries).length)*100);
+            
             
         }
         }
 
-        
+        for ( var i = 0, len = localStorage.length; i < len; ++i ){
+            var animeseriesname="."+localStorage.key(i);
+                $(animeseriesname).prop('checked', true);
+        }    
 
 }
 
