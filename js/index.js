@@ -46,20 +46,20 @@ const texty4 = '[{"title": "One Piece", "title_url": "one-piece-3", "genres": "A
         var movexx=0;
         var FLAG=false;
   
-        // function myfuky(){
+        function myfuky(){
 
-        //   $("tbody").attr("hidden",false);
+          $("tbody").attr("hidden",false);
           
-        //   $(window).scrollTop(movexx);
+          $(window).scrollTop(movexx);
 
-        // }
+        }
   
-        // function myfuky2(){
+        function myfuky2(){
           
-        //   movexx=$(window).scrollTop();
-        //   $("tbody").attr("hidden",true);
+          movexx=$(window).scrollTop();
+          $("tbody").attr("hidden",true);
           
-        // }
+        }
 
 
 
