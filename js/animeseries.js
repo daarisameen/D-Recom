@@ -96,11 +96,7 @@ function animeseries()
             // break;
             name=myarranimeseries[i]['m_title'].replace(/ /g,"+")+"+anime+trailer\"";
             const noSpecialChars = myarranimeseries[i]['m_title'].replace(/[^a-zA-Z0-9]/g, '');
-            var ss="<tr><th>"+num.toString()+"</th><td>"+myarranimeseries[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarranimeseries[i]['desp']+"</div></td><td>"+myarranimeseries[i]['year']+"</td><td>"+myarranimeseries[i]['genre']+"</td><td>"+myarranimeseries[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td><td><label class=\"switch\"><input type=\"checkbox\" name=\""+noSpecialChars+"\" onclick=\"save('"+noSpecialChars+"')\"><span class=\"slider round\"></span></label></td></tr>";
-            if(localStorage.getItem("animename"))
-            {
-                $("input").prop('checked', true);
-            }
+            var ss="<tr><th>"+num.toString()+"</th><td>"+myarranimeseries[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarranimeseries[i]['desp']+"</div></td><td>"+myarranimeseries[i]['year']+"</td><td>"+myarranimeseries[i]['genre']+"</td><td>"+myarranimeseries[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td><td><label class=\"switch\"><input type=\"checkbox\" class=\""+noSpecialChars+"\" onclick=\"save('"+noSpecialChars+"')\"><span class=\"slider round\"></span></label></td></tr>";
             $("tbody").append(ss);
             }
         }
@@ -118,7 +114,7 @@ function animeseries()
             // break;
             name=myarranimeseries[i]['m_title'].replace(/ /g,"+")+"+anime+trailer\"";
             const noSpecialChars = myarranimeseries[i]['m_title'].replace(/[^a-zA-Z0-9]/g, '');
-            var ss="<tr><th>"+num.toString()+"</th><td>"+myarranimeseries[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarranimeseries[i]['desp']+"</div></td><td>"+myarranimeseries[i]['year']+"</td><td>"+myarranimeseries[i]['genre']+"</td><td>"+myarranimeseries[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td><td><label class=\"switch\"><input type=\"checkbox\" name=\""+noSpecialChars+"\" onclick=\"save('"+noSpecialChars+"')\"><span class=\"slider round\"></span></label></td></tr>";
+            var ss="<tr><th>"+num.toString()+"</th><td>"+myarranimeseries[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarranimeseries[i]['desp']+"</div></td><td>"+myarranimeseries[i]['year']+"</td><td>"+myarranimeseries[i]['genre']+"</td><td>"+myarranimeseries[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td><td><label class=\"switch\"><input type=\"checkbox\" class=\""+noSpecialChars+"\" onclick=\"save('"+noSpecialChars+"')\"><span class=\"slider round\"></span></label></td></tr>";
             $("tbody").append(ss);
             }
         }
@@ -137,7 +133,7 @@ function animeseries()
             // break;
             name=myarranimeseries[i]['m_title'].replace(/ /g,"+")+"+anime+trailer\"";
             const noSpecialChars = myarranimeseries[i]['m_title'].replace(/[^a-zA-Z0-9]/g, '');
-            var ss="<tr><th>"+num.toString()+"</th><td>"+myarranimeseries[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarranimeseries[i]['desp']+"</div></td><td>"+myarranimeseries[i]['year']+"</td><td>"+myarranimeseries[i]['genre']+"</td><td>"+myarranimeseries[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td><td><label class=\"switch\"><input type=\"checkbox\" name=\""+noSpecialChars+"\" onclick=\"save('"+noSpecialChars+"')\"><span class=\"slider round\"></span></label></td></tr>";
+            var ss="<tr><th>"+num.toString()+"</th><td>"+myarranimeseries[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarranimeseries[i]['desp']+"</div></td><td>"+myarranimeseries[i]['year']+"</td><td>"+myarranimeseries[i]['genre']+"</td><td>"+myarranimeseries[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td><td><label class=\"switch\"><input type=\"checkbox\" class=\""+noSpecialChars+"\" onclick=\"save('"+noSpecialChars+"')\"><span class=\"slider round\"></span></label></td></tr>";
             $("tbody").append(ss);
             }
         }
