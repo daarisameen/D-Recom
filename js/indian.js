@@ -147,18 +147,7 @@ function mycall()
     
     $("#myInput").attr("hidden",false);
     $("table").attr("hidden",false);
-    // <tbody>
-      // <tr>
-      //   <th>1</th>
-      //   <td>Mark</td>
-      //   <td>Otto</td>
-      //   <td>@mdo</td>
-      //   <td>t</td>
-      // </tr>
-    // </tbody>
-
-  // $(".loader").attr("hidden",false);        
-    // url="https://www.imdb.com/search/title/?num_votes=5000,&countries=kr&view=simple&sort=user_rating,desc"
+    
     myVar = "hello";
 
 
@@ -167,7 +156,7 @@ function mycall()
     if(title_type=="Indian series")
     {
 
-      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\">Imdb Rating</th><th scope=\"col\">Trailer</th></tr></thead>")
+      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\"><i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th></tr></thead>")
 
       if(yearindex!="0" && genreindex!="0")
     {
@@ -240,7 +229,7 @@ function mycall()
     else if(title_type=="Tamil Movies")
     {
 
-      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\">Imdb Rating</th><th scope=\"col\">Trailer</th></tr></thead>")
+      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\"><i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th></tr></thead>")
 
       if(yearindex!="0" && genreindex!="0")
     {
@@ -313,7 +302,7 @@ function mycall()
     if(title_type=="Hindi Movies")
     {
 
-      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\">Imdb Rating</th><th scope=\"col\">Trailer</th></tr></thead>")
+      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\"><i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th></tr></thead>")
 
       if(yearindex!="0" && genreindex!="0")
     {
@@ -386,7 +375,7 @@ function mycall()
     if(title_type=="Telugu Movies")
     {
 
-      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\">Imdb Rating</th><th scope=\"col\">Trailer</th></tr></thead>")
+      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\"><i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th></tr></thead>")
 
       if(yearindex!="0" && genreindex!="0")
     {
@@ -459,7 +448,7 @@ function mycall()
     if(title_type=="Kannada Movies")
     {
 
-      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\">Imdb Rating</th><th scope=\"col\">Trailer</th></tr></thead>")
+      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\"><i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th></tr></thead>")
 
       if(yearindex!="0" && genreindex!="0")
     {
@@ -532,7 +521,7 @@ function mycall()
     if(title_type=="Malayalam Movies")
     {
 
-      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\">Imdb Rating</th><th scope=\"col\">Trailer</th></tr></thead>")
+      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\"><i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th></tr></thead>")
 
       if(yearindex!="0" && genreindex!="0")
     {
@@ -602,50 +591,6 @@ function mycall()
     
     }
     
-
-    // https://www.youtube.com/results?search_query=dhruv+rathee
-
-    // if(title_type=="coding")
-    //     url = url + "&" + "title_type=tv_series";
-    
-    // if(title_type=="K movies")
-    //     url = url + "&" + "title_type=feature";
-
-    // if(yearindex!="0")
-    //     url=url+"&"+"year="+year;
-        
-    // if(genreindex!="0")
-    //     url=url+"&"+"genres="+genre;
-    
-    // url+=("&"+list);
-      
-      // url = JSON.stringify(url);   
-      // alert(url)
-
-      // $.ajax({
-      // url:"/test",
-      // type:"POST",
-      // contentType: "application/json",
-      // data: JSON.stringify(url)})
-      // .then(function (response) {
-
-          // console.log(response);
-          
-          // fetch('/')
-          // .then(function (response) {
-            // $(".loader").attr("hidden",false);
-            // window.location.reload();
-              // return response.json();
-          // }).then(function (text) {
-              // console.log('GET response:');
-              // console.log(text); 
-              
-              
-          // });
-
-        // });
-      
-      // window.location.reload();
 
 }
 
