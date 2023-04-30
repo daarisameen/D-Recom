@@ -30,7 +30,21 @@ const texty5 = '[{"m_title": "Suzume", "r": "7.8", "year": "2022", "votes": "5,1
       genremanindex=$("#dropdownMenuButton5 option:selected").val();
       listindex=$("#dropdownMenuButton4 option:selected").val();
       
-      
+function save(animename)
+{
+
+  
+  var animemoviesname="."+animename;
+  
+  if($(animemoviesname).is(":checked"))
+  {
+      localStorage.setItem(animename, "a");   
+  }
+  else
+  {
+      localStorage.removeItem(animename);
+  }
+}      
       
 
       
@@ -78,7 +92,8 @@ function animemovies()
             // if(yi==100)
             // break;
             name=myarr3[i]['m_title'].replace(/ /g,"+")+"+anime+trailer\"";
-            var ss="<tr><th>"+num.toString()+"</th><td>"+myarr3[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarr3[i]['desp']+"</div></td><td>"+myarr3[i]['year']+"</td><td>"+myarr3[i]['genre']+"</td><td>"+myarr3[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
+            const noSpecialChars = myarr3[i]['m_title'].replace(/[^a-zA-Z0-9]/g, '');
+            var ss="<tr><th>"+num.toString()+"</th><td>"+myarr3[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarr3[i]['desp']+"</div></td><td>"+myarr3[i]['year']+"</td><td>"+myarr3[i]['genre']+"</td><td>"+myarr3[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td><td><label class=\"switch\"><input type=\"checkbox\" class=\""+noSpecialChars+"\" onclick=\"save('"+noSpecialChars+"')\"><span class=\"slider round\"></span></label></td></tr>";
             $("tbody").append(ss);
           }
         }
@@ -95,7 +110,8 @@ function animemovies()
             // if(yi==100)
             // break;
             name=myarr3[i]['m_title'].replace(/ /g,"+")+"+anime+trailer\"";
-            var ss="<tr><th>"+num.toString()+"</th><td>"+myarr3[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarr3[i]['desp']+"</div></td><td>"+myarr3[i]['year']+"</td><td>"+myarr3[i]['genre']+"</td><td>"+myarr3[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
+            const noSpecialChars = myarr3[i]['m_title'].replace(/[^a-zA-Z0-9]/g, '');
+            var ss="<tr><th>"+num.toString()+"</th><td>"+myarr3[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarr3[i]['desp']+"</div></td><td>"+myarr3[i]['year']+"</td><td>"+myarr3[i]['genre']+"</td><td>"+myarr3[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td><td><label class=\"switch\"><input type=\"checkbox\" class=\""+noSpecialChars+"\" onclick=\"save('"+noSpecialChars+"')\"><span class=\"slider round\"></span></label></td></tr>";
             $("tbody").append(ss);
           }
         }
@@ -113,7 +129,8 @@ function animemovies()
             // if(yi==100)
             // break;
             name=myarr3[i]['m_title'].replace(/ /g,"+")+"+anime+trailer\"";
-            var ss="<tr><th>"+num.toString()+"</th><td>"+myarr3[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarr3[i]['desp']+"</div></td><td>"+myarr3[i]['year']+"</td><td>"+myarr3[i]['genre']+"</td><td>"+myarr3[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
+            const noSpecialChars = myarr3[i]['m_title'].replace(/[^a-zA-Z0-9]/g, '');
+            var ss="<tr><th>"+num.toString()+"</th><td>"+myarr3[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarr3[i]['desp']+"</div></td><td>"+myarr3[i]['year']+"</td><td>"+myarr3[i]['genre']+"</td><td>"+myarr3[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td><td><label class=\"switch\"><input type=\"checkbox\" class=\""+noSpecialChars+"\" onclick=\"save('"+noSpecialChars+"')\"><span class=\"slider round\"></span></label></td></tr>";
             $("tbody").append(ss);
           }
         }
@@ -126,12 +143,16 @@ function animemovies()
           // if(i==99)
           // break;
             name=myarr3[i]['m_title'].replace(/ /g,"+")+"+anime+trailer\"";
-            var ss="<tr><th>"+num.toString()+"</th><td>"+myarr3[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarr3[i]['desp']+"</div></td><td>"+myarr3[i]['year']+"</td><td>"+myarr3[i]['genre']+"</td><td>"+myarr3[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
+            const noSpecialChars = myarr3[i]['m_title'].replace(/[^a-zA-Z0-9]/g, '');
+            var ss="<tr><th>"+num.toString()+"</th><td>"+myarr3[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarr3[i]['desp']+"</div></td><td>"+myarr3[i]['year']+"</td><td>"+myarr3[i]['genre']+"</td><td>"+myarr3[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td><td><label class=\"switch\"><input type=\"checkbox\" class=\""+noSpecialChars+"\" onclick=\"save('"+noSpecialChars+"')\"><span class=\"slider round\"></span></label></td></tr>";
           $("tbody").append(ss);
         }
       }
 
-    
+      for ( var i = 0, len = localStorage.length; i < len; ++i ){
+        var animemoviename="."+localStorage.key(i);
+            $(animemoviename).prop('checked', true);
+    }
     
 
 }
