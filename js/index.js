@@ -180,7 +180,7 @@ $('#dropdownMenuButton1').change(function() {
                 // if(yi==100)
                 // break;
                 
-                var ss="<tr><th>"+num.toString()+"</th><td>"+myarr4[i]['title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\"> <img src=https://img.mreadercdn.com/_m/300x400/100/"+myarr4[i]['images']+" style=\"width:200px;height:200px;overflow:hidden\"></div></td><td>"+myarr4[i]['genres']+"</td><td><a href=http://mangareader.to/"+myarr4[i]['title_url']+" target=\"_blank\">link</a></td></tr>";
+                var ss="<tr><th>"+num.toString()+"</th><td>"+myarr4[i]['title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\"> <img src=http://img.mreadercdn.com/_m/300x400/100/"+myarr4[i]['images']+" style=\"width:200px;height:200px;overflow:hidden\"></div></td><td>"+myarr4[i]['genres']+"</td><td><a href=http://mangareader.to/"+myarr4[i]['title_url']+" target=\"_blank\">link</a></td></tr>";
                 $("tbody").append(ss);
               }
             }
@@ -197,7 +197,7 @@ $('#dropdownMenuButton1').change(function() {
               // if(yi==100)
               // break;
               
-              var ss="<tr><th>"+num.toString()+"</th><td>"+myarr4[i]['title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\"> <img src=https://img.mreadercdn.com/_m/300x400/100/"+myarr4[i]['images']+" style=\"width:200px;height:200px;overflow:hidden\"></div></td><td>"+myarr4[i]['genres']+"</td><td><a href=http://mangareader.to/"+myarr4[i]['title_url']+" target=\"_blank\">link</a></td></tr>";
+              var ss="<tr><th>"+num.toString()+"</th><td>"+myarr4[i]['title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\"> <img src=http://img.mreadercdn.com/_m/300x400/100/"+myarr4[i]['images']+" style=\"width:200px;height:200px;overflow:hidden\"></div></td><td>"+myarr4[i]['genres']+"</td><td><a href=http://mangareader.to/"+myarr4[i]['title_url']+" target=\"_blank\">link</a></td></tr>";
               $("tbody").append(ss);
               
             }
