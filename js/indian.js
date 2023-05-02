@@ -156,7 +156,7 @@ function mycall()
     if(title_type=="Indian series")
     {
 
-      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\"><i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th></tr></thead>")
+      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:24px\"></i></th></tr></thead>")
 
       if(yearindex!="0" && genreindex!="0")
     {
@@ -229,7 +229,7 @@ function mycall()
     else if(title_type=="Tamil Movies")
     {
 
-      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\"><i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th></tr></thead>")
+      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:24px\"></i></th></tr></thead>")
 
       if(yearindex!="0" && genreindex!="0")
     {
@@ -302,7 +302,7 @@ function mycall()
     if(title_type=="Hindi Movies")
     {
 
-      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\"><i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th></tr></thead>")
+      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:24px\"></i></th></tr></thead>")
 
       if(yearindex!="0" && genreindex!="0")
     {
@@ -375,7 +375,7 @@ function mycall()
     if(title_type=="Telugu Movies")
     {
 
-      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\"><i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th></tr></thead>")
+      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:24px\"></i></th></tr></thead>")
 
       if(yearindex!="0" && genreindex!="0")
     {
@@ -448,7 +448,7 @@ function mycall()
     if(title_type=="Kannada Movies")
     {
 
-      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\"><i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th></tr></thead>")
+      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:24px\"></i></th></tr></thead>")
 
       if(yearindex!="0" && genreindex!="0")
     {
@@ -521,7 +521,7 @@ function mycall()
     if(title_type=="Malayalam Movies")
     {
 
-      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\"><i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th></tr></thead>")
+      $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:24px\"></i></th></tr></thead>")
 
       if(yearindex!="0" && genreindex!="0")
     {
