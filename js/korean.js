@@ -158,7 +158,7 @@ const texty5 = '[{"title": "Solo Leveling", "title_url": "solo-leveling-21", "ge
                       // if(yi==100)
                       // break;
                       name=myarr[i]['m_title'].replace(/ /g,"+")+"+series+trailer\"";
-                      var ss="<tr><th>"+num.toString()+"</th><td>"+myarr[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarr[i]['desp']+"</div></td><td>"+myarr[i]['year']+"</td><td>"+myarr[i]['genre']+"</td><td>"+myarr[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
+                      var ss="<tr><th>"+num.toString()+"</th><td>"+myarr[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarr[i]['desp']+"</div></td><td>"+myarr[i]['year']+"</td><td>"+myarr[i]['genre']+"</td><td>"+myarr[i]['r']+"</td><td><a href=\"http://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
                       $("tbody").append(ss);
                     }
                   }
@@ -175,7 +175,7 @@ const texty5 = '[{"title": "Solo Leveling", "title_url": "solo-leveling-21", "ge
                       // if(yi==100)
                       // break;
                       name=myarr[i]['m_title'].replace(/ /g,"+")+"+series+trailer\"";
-                      var ss="<tr><th>"+num.toString()+"</th><td>"+myarr[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarr[i]['desp']+"</div></td><td>"+myarr[i]['year']+"</td><td>"+myarr[i]['genre']+"</td><td>"+myarr[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
+                      var ss="<tr><th>"+num.toString()+"</th><td>"+myarr[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarr[i]['desp']+"</div></td><td>"+myarr[i]['year']+"</td><td>"+myarr[i]['genre']+"</td><td>"+myarr[i]['r']+"</td><td><a href=\"http://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
                       $("tbody").append(ss);
                     }
                   }
@@ -193,7 +193,7 @@ const texty5 = '[{"title": "Solo Leveling", "title_url": "solo-leveling-21", "ge
                       // if(yi==100)
                       // break;
                       name=myarr[i]['m_title'].replace(/ /g,"+")+"+series+trailer\"";
-                      var ss="<tr><th>"+num.toString()+"</th><td>"+myarr[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarr[i]['desp']+"</div></td><td>"+myarr[i]['year']+"</td><td>"+myarr[i]['genre']+"</td><td>"+myarr[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
+                      var ss="<tr><th>"+num.toString()+"</th><td>"+myarr[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarr[i]['desp']+"</div></td><td>"+myarr[i]['year']+"</td><td>"+myarr[i]['genre']+"</td><td>"+myarr[i]['r']+"</td><td><a href=\"http://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
                       $("tbody").append(ss);
                     }
                   }
@@ -206,7 +206,7 @@ const texty5 = '[{"title": "Solo Leveling", "title_url": "solo-leveling-21", "ge
                     // if(i==99)
                     // break;
                      name=myarr[i]['m_title'].replace(/ /g,"+")+"+series+trailer\"";
-                      var ss="<tr><th>"+num.toString()+"</th><td>"+myarr[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarr[i]['desp']+"</div></td><td>"+myarr[i]['year']+"</td><td>"+myarr[i]['genre']+"</td><td>"+myarr[i]['r']+"</td><td><a href=\"https://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
+                      var ss="<tr><th>"+num.toString()+"</th><td>"+myarr[i]['m_title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\">"+myarr[i]['desp']+"</div></td><td>"+myarr[i]['year']+"</td><td>"+myarr[i]['genre']+"</td><td>"+myarr[i]['r']+"</td><td><a href=\"http://www.youtube.com/results?search_query="+name+" target=\"_blank\">link</a></td></tr>";
                     $("tbody").append(ss);
                   }
                 }
@@ -229,7 +229,7 @@ const texty5 = '[{"title": "Solo Leveling", "title_url": "solo-leveling-21", "ge
                       // if(yi==100)
                       // break;
                       
-                      var ss="<tr><th>"+num.toString()+"</th><td>"+myarr5[i]['title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\"> <img src=https://img.mreadercdn.com/_m/300x400/100/"+myarr5[i]['images']+" style=\"width:200px;height:200px;overflow:hidden\"></div></td><td>"+myarr5[i]['genres']+"</td><td><a href=http://mangareader.to/"+myarr5[i]['title_url']+" target=\"_blank\">link</a></td></tr>";
+                      var ss="<tr><th>"+num.toString()+"</th><td>"+myarr5[i]['title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\"> <img src=http://img.mreadercdn.com/_m/300x400/100/"+myarr5[i]['images']+" style=\"width:200px;height:200px;overflow:hidden\"></div></td><td>"+myarr5[i]['genres']+"</td><td><a href=http://mangareader.to/"+myarr5[i]['title_url']+" target=\"_blank\">link</a></td></tr>";
                       $("tbody").append(ss);
                     }
                   }
@@ -245,7 +245,7 @@ const texty5 = '[{"title": "Solo Leveling", "title_url": "solo-leveling-21", "ge
                     // if(yi==100)
                     // break;
                     
-                    var ss="<tr><th>"+num.toString()+"</th><td>"+myarr5[i]['title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\"> <img src=https://img.mreadercdn.com/_m/300x400/100/"+myarr5[i]['images']+" style=\"width:200px;height:200px;overflow:hidden\"></div></td><td>"+myarr5[i]['genres']+"</td><td><a href=http://mangareader.to/"+myarr5[i]['title_url']+" target=\"_blank\">link</a></td></tr>";
+                    var ss="<tr><th>"+num.toString()+"</th><td>"+myarr5[i]['title']+"&nbsp; <i class=\"fa myDIV fa-info-circle\"  tabindex=\"1\" style=\"font-size:20px;color:gold\"></i><div class=\"hiddendiv\"> <img src=http://img.mreadercdn.com/_m/300x400/100/"+myarr5[i]['images']+" style=\"width:200px;height:200px;overflow:hidden\"></div></td><td>"+myarr5[i]['genres']+"</td><td><a href=http://mangareader.to/"+myarr5[i]['title_url']+" target=\"_blank\">link</a></td></tr>";
                     $("tbody").append(ss);
                     
                   }
