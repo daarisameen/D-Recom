@@ -80,7 +80,7 @@ function animeseries()
     
     
         
-        $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\"><i class=\"fa fa-imdb\" style=\"font-size:26px\"></i></th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:26px\"></i></th><th scope=\"col\">Watched?</th></tr></thead>")
+        $("table").append("<thead><tr><th scope=\"col\"># Rank</th><th scope=\"col\">Name</th><th scope=\"col\">Released Year</th><th scope=\"col\">Genre</th><th scope=\"col\"><i class=\"fa fa-imdb\" style=\"font-size:26px\"></i></th><th scope=\"col\">Trailer<i class=\"fa fa-youtube-play\" style=\"font-size:24px\"></i></th><th scope=\"col\">Watched?</th></tr></thead>")
 
         if(yearindex!="0" && genreindex!="0")
         {
