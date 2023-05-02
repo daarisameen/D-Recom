@@ -124,6 +124,7 @@ $('#dropdownMenuButton1').change(function() {
   }
 
 });
+
       function mycall()
       {
         
@@ -248,7 +249,7 @@ $('#dropdownMenuButton1').change(function() {
 
       let mybutton = document.getElementById("myBtn");
 
-      // When the user scrolls down 20px from the top of the document, show the button
+      // When the user scrolls down 500px from the top of the document, show the button
       window.onscroll = function() {scrollFunction()};
       
       function scrollFunction() {
